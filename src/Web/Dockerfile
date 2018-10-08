@@ -10,7 +10,7 @@
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /app
 
-COPY *.sln .
+COPY ./*.sln .
 COPY . .
 WORKDIR /app/src/Web
 RUN dotnet restore
